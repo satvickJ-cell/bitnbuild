@@ -1,0 +1,5 @@
+{
+  "min_drain_budget_per_km": 150000,
+  "historical_ward_avg": 3400000,
+  "min_commercial_road_width_m": 12
+}

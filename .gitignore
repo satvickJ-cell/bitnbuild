@@ -1,0 +1,22 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets & Environment Variables (CRITICAL)
+.env
+.env.local
+
+# Python Cache & System Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+.antigravity/
