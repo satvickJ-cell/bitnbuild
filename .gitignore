@@ -3,18 +3,57 @@
 venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
 # Secrets & Environment Variables (CRITICAL)
 .env
 .env.local
+.env.*.local
+*.env
 
 # Python Cache & System Files
 __pycache__/
-*.py[cod]
+*.py[codz]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 *.log
 .DS_Store
 Thumbs.db
+
+# Testing & Type checking
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+.mypy_cache/
+.ruff_cache/
 
 # IDE Files
 .vscode/
