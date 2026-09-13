@@ -12,9 +12,9 @@ load_dotenv()
 
 logger = logging.getLogger(__name__)
 
-# Primary and fallback Gemini models
-DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
-FALLBACK_MODELS = ["gemini-3.6-flash", "gemini-2.0-flash"]
+# Primary and fallback Gemini models (using active supported endpoints)
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
+FALLBACK_MODELS = ["gemini-3.5-flash", "gemini-3.7-flash", "gemini-flash-latest", "gemini-3.1-flash-lite", "gemini-3.6-flash"]
 
 def get_genai_client() -> genai.Client:
     """Initialize and return standard google-genai Client."""
